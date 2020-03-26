@@ -8,7 +8,7 @@ module.exports = {
             .count();
 
         const incidents = await connection('incidents')
-            .join('ongs', ongs.id, '=', 'incidents.ong_id')
+            .join('ongs', 'ongs.id', '=', 'incidents.ong_id')
             .limit(5)
             .offset((page - 1) * 5)
             .select([
@@ -40,7 +40,7 @@ module.exports = {
     },
 
     async delete(request, response) {
-        const { id } = reques.params;
+        const { id } = request.params;
         const ong_id = request.headers.authorization;
 
         const incident = await connection('incidents')
