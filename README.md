@@ -8,4 +8,4 @@ The application consists of connecting ONGs with people who can collaborate with
 
 ## Screen of de Login
 
-![beTheHero_image](https://github.com/IngridCarvalho/beTheHero/blob/master/login.png)
+![beTheHero_image](https://github.com/IngridCarvalho/beTheHero/blob/master/screens/login.png)
